@@ -47,7 +47,7 @@ namespace RevitRibbonParametersManager.Forms
         /// <summary>
         /// Функция, которая возвращает типы данных в зависимости от версии Revit
         /// </summary>
-#if Revit2020 || Debug2020
+#if Revit2020
         static public ParameterType GetParameterTypeFromString(string dataType)
         {
             switch (dataType)
@@ -198,7 +198,7 @@ namespace RevitRibbonParametersManager.Forms
         }
 #endif
 
-#if Revit2023 || Debug2023
+#if Revit2023
         /// <summary>
         /// Получение ForgeTypeId типа данных из string
         /// </summary>

@@ -51,7 +51,7 @@ namespace RevitRibbonParametersManager.Forms
             return choiceWindow.CheckingValueOfAParameter(comboBox, textBox, paramTypeName);
         }
 
-#if Revit2023 || Debug2023
+#if Revit2023
         public string GetParamTypeName(ExternalDefinition def, ForgeTypeId value)
         {
             batchAddingParametersWindowСhoice choiceWindow = new batchAddingParametersWindowСhoice(uiapp, activeFamilyName);
@@ -570,11 +570,11 @@ namespace RevitRibbonParametersManager.Forms
                         DefinitionGroup defGroup = defFile.Groups.get_Item(CB_paramsGroup.SelectedItem.ToString());
                         ExternalDefinition def = defGroup.Definitions.get_Item(CB_paramsName.SelectedItem.ToString()) as ExternalDefinition;
 
-#if Revit2020 || Debug2020
+#if Revit2020
                         ParameterType paramType = def.ParameterType;
 #endif
 
-#if Revit2023 || Debug2023
+#if Revit2023
                         ForgeTypeId paramTypeId = def.GetDataType();
                         string paramType = GetParamTypeName(def, paramTypeId);
 #endif
@@ -914,10 +914,10 @@ namespace RevitRibbonParametersManager.Forms
                             DefinitionGroup defGroup = defFile.Groups.get_Item(cbParamsGroup.SelectedItem.ToString());
                             ExternalDefinition def = defGroup.Definitions.get_Item(cbParamsName.SelectedItem.ToString()) as ExternalDefinition;
 
-#if Revit2020 || Debug2020
+#if Revit2020
                             ParameterType paramType = def.ParameterType;
 #endif
-#if Revit2023 || Debug2023
+#if Revit2023
                             ForgeTypeId paramTypeId = def.GetDataType();
                             string paramType = GetParamTypeName(def, paramTypeId);
 #endif

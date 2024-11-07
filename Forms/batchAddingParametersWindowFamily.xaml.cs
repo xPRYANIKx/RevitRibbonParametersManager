@@ -31,13 +31,13 @@ namespace RevitRibbonParametersManager.Forms
             return batchAddingParametersWindowСhoice.CreateTypeInstanceList();
         }
 
-#if Revit2020 || Debug2020
+#if Revit2020
         public ParameterType GetParameterTypeFromString(string dataType)
         {
             return batchAddingParametersWindowСhoice.GetParameterTypeFromString(dataType);
         }
 #endif
-#if Revit2023 || Debug2023
+#if Revit2023
         public ForgeTypeId GetParameterTypeFromString(string dataType)
         {
             return batchAddingParametersWindowСhoice.GetParameterTypeFromString(dataType);
@@ -96,7 +96,7 @@ namespace RevitRibbonParametersManager.Forms
         // Создание Dictionary<string, List<string>> для "Категории параметров" и "Тип данных"
         static public Dictionary<string, List<string>> CategoryParameterDataTypes = new Dictionary<string, List<string>>
         {
-#if Revit2020 || Debug2020
+#if Revit2020
             { "Общие", new List<string>(){
                 "Текст", "Целое", "Число", "Длина", "Площадь", "Объем (Общие)", "Угол", "Уклон (Общие)", "Денежная единица", "Массовая плотность", "Время", "Скорость (Общие)", "URL", "Материал",
                 "Изображение", "Да/Нет", "Многострочный текст"} },
@@ -123,7 +123,7 @@ namespace RevitRibbonParametersManager.Forms
             { "Энергия", new List<string>(){
                 "Энергия (Энергия)", "Коэффициент теплопередачи", "Термостойкость", "Тепловая нагрузка", "Теплопроводность", "Удельная теплоемкость", "Удельная теплоемкость парообразования", "Проницаемость"}}
 #endif
-#if Revit2023 || Debug2023
+#if Revit2023
             { "Общие", new List<string>(){
                 "Текст", "Целое", "Угол", "Площадь", "Стоимость на единицу площади", "Расстояние", "Длина", "Массовая плотность", "Число", "Угол поворота", "Уклон (Общие)", "Скорость (Общие)", "Время", "Объем (Общие)", 
                 "Денежная единица", "URL", "Материал", "Образец заливки", "Изображение", "Да/Нет", "Многострочный текст"}},
@@ -837,7 +837,7 @@ namespace RevitRibbonParametersManager.Forms
 
                             try
                             {
-#if Revit2020 || Debug2020
+#if Revit2020
                                 BuiltInParameterGroup grouping = BuiltInParameterGroup.INVALID;
 
                                 if (groupParameterDictionary.TryGetValue(paramDetails[5], out BuiltInParameterGroup builtInParameterGroup))
@@ -856,7 +856,7 @@ namespace RevitRibbonParametersManager.Forms
                                     familyParameter = familyManager.AddParameter(fParamName, grouping, paramType, isInstance);
                                 }
 #endif
-#if Revit2023 || Debug2023
+#if Revit2023
                                 ForgeTypeId groupType = GetParameterGroupFromString(paramDetails[5]);
                                 ForgeTypeId paramType = GetParameterTypeFromString(dataType);
 

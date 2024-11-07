@@ -24,13 +24,13 @@ namespace RevitRibbonParametersManager.Forms
         string jsonFileSettingPath;
 
         // Определение функций-словарей
-#if Revit2020 || Debug2020
+#if Revit2020
         public ParameterType GetParameterTypeFromString(string dataType)
         {
             return batchAddingParametersWindowСhoice.GetParameterTypeFromString(dataType);
         }
 #endif
-#if Revit2023 || Debug2023
+#if Revit2023
         public ForgeTypeId GetParameterTypeFromString(string dataType)
         {
             return batchAddingParametersWindowСhoice.GetParameterTypeFromString(dataType);
@@ -558,7 +558,7 @@ namespace RevitRibbonParametersManager.Forms
                                         FamilyParameter existingParam = familyManager.get_Parameter(fParamName);
                                         FamilyParameter familyParameter;
 
-#if Revit2020 || Debug2020
+#if Revit2020
                                         BuiltInParameterGroup grouping = BuiltInParameterGroup.INVALID;
 
                                         if (groupParameterDictionary.TryGetValue(paramDetails[5], out BuiltInParameterGroup builtInParameterGroup))
@@ -577,7 +577,7 @@ namespace RevitRibbonParametersManager.Forms
                                             familyParameter = familyManager.AddParameter(fParamName, grouping, paramType, isInstance);
                                         }
 #endif
-#if Revit2023 || Debug2023
+#if Revit2023
                                         ForgeTypeId groupType = GetParameterGroupFromString(paramDetails[5]);
                                         ForgeTypeId paramType = GetParameterTypeFromString(dataType);
 

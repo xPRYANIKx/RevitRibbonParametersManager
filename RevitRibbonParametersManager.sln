@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitRibbonParametersManager", "RevitRibbonParametersManager.csproj", "{5FE62F68-7BAE-4BB4-B4B4-A6862FDE7A70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug2020|Any CPU = Debug2020|Any CPU
+		Debug2020|x64 = Debug2020|x64
+		Debug2023|Any CPU = Debug2023|Any CPU
+		Debug2023|x64 = Debug2023|x64
+		Revit2020|Any CPU = Revit2020|Any CPU
+		Revit2020|x64 = Revit2020|x64
+		Revit2023|Any CPU = Revit2023|Any CPU
+		Revit2023|x64 = Revit2023|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FE62F68-7BAE-4BB4-B4B4-A6862FDE7A70}.Debug2020|Any CPU.ActiveCfg = Debug2020|Any CPU
+		{5FE62F68-7BAE-4BB4-B4B4-A6862FDE7A70}.Debug2020|Any CPU.Build.0 = Debug2020|Any CPU
+		{5FE62F68-7BAE-4BB4-B4B4-A6862FDE7A70}.Debug2020|x64.ActiveCfg = Revit2020|x64
+		{5FE62F68-7BAE-4BB4-B4B4-A6862FDE7A70}.Debug2020|x64.Build.0 = Revit2020|x64
+		{5FE62F68-7BAE-4BB4-B4B4-A6862FDE7A70}.Debug2023|Any CPU.ActiveCfg = Debug2023|x64
+		{5FE62F68-7BAE-4BB4-B4B4-A6862FDE7A70}.Debug2023|Any CPU.Build.0 = Debug2023|x64
+		{5FE62F68-7BAE-4BB4-B4B4-A6862FDE7A70}.Debug2023|x64.ActiveCfg = Debug2023|x64
+		{5FE62F68-7BAE-4BB4-B4B4-A6862FDE7A70}.Debug2023|x64.Build.0 = Debug2023|x64
+		{5FE62F68-7BAE-4BB4-B4B4-A6862FDE7A70}.Revit2020|Any CPU.ActiveCfg = Debug2020|Any CPU
+		{5FE62F68-7BAE-4BB4-B4B4-A6862FDE7A70}.Revit2020|Any CPU.Build.0 = Debug2020|Any CPU
+		{5FE62F68-7BAE-4BB4-B4B4-A6862FDE7A70}.Revit2020|x64.ActiveCfg = Revit2020|x64
+		{5FE62F68-7BAE-4BB4-B4B4-A6862FDE7A70}.Revit2020|x64.Build.0 = Revit2020|x64
+		{5FE62F68-7BAE-4BB4-B4B4-A6862FDE7A70}.Revit2023|Any CPU.ActiveCfg = Revit2023|x64
+		{5FE62F68-7BAE-4BB4-B4B4-A6862FDE7A70}.Revit2023|Any CPU.Build.0 = Revit2023|x64
+		{5FE62F68-7BAE-4BB4-B4B4-A6862FDE7A70}.Revit2023|x64.ActiveCfg = Debug2023|x64
+		{5FE62F68-7BAE-4BB4-B4B4-A6862FDE7A70}.Revit2023|x64.Build.0 = Debug2023|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33CFE0C3-E23A-4409-ADA3-7D42C7759B4A}
+	EndGlobalSection
+EndGlobal
